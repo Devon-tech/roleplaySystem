@@ -44,6 +44,10 @@ minNumberOfPlayers = 0 -- This is the minimum number of players needed on the se
 npcRoam = true -- This value determines if the activator entities will be able to move when they are spawned
 enemyHealth = 100 -- The amount of health each spawned NPC will have
 
+--[[
+Below you are able to set spawn positions, but please note you are able to do this in-game to avoid working with the code directly
+--]]
+
 
 SpawnPositions = { -- The positions in here are where you want the enemies to spawn
     {
@@ -67,8 +71,8 @@ NPCEdits = {
         name = "Raid", -- The identifier for the type of activity
         information = 
         {
-            activatorModel = "models/alyx.mdl",
-            npcPath = "npc_stalker",
+            activatorModel = "models/alyx.mdl", -- The model of the activator NPC
+            npcPath = "npc_stalker", -- The model for the enemies
             maxNPCs = 5, -- This number is how many NPCs will spawn when the event is activated
             dialogue = "Ahh, an imperial scumbag. Just wait until reinforcements arrive...", -- This is the dialogue that is shown to the player when they interact with the NPC
         }
